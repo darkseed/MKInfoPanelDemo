@@ -50,7 +50,7 @@
         self.backgroundGradient.image = [[UIImage imageNamed:@"Blue"] stretchableImageWithLeftCapWidth:1 topCapHeight:5];
         self.titleLabel.font = [UIFont boldSystemFontOfSize:15];
         self.thumbImage.image = [UIImage imageNamed:@"Tick"];   
-        self.detailLabel.textColor = RGBA(140, 140, 255, 1.0);
+        self.detailLabel.textColor = RGBA(210, 210, 235, 1.0);
     }
         
 }
@@ -84,7 +84,7 @@
         panel.detailLabel.hidden = YES;
         panel.frame = CGRectMake(0, 0, 320, 50);
         panel.thumbImage.frame = CGRectMake(15, 5, 35, 35);
-        panel.titleLabel.frame = CGRectMake(57, 10, 240, 21);
+        panel.titleLabel.frame = CGRectMake(57, 12, 240, 21);
         
     }
     
@@ -100,21 +100,13 @@
 	transition.type = kCATransitionPush;	
 	transition.subtype = kCATransitionFromTop;
 	[self.layer addAnimation:transition forKey:nil];
-    self.frame = CGRectMake(0, -self.frame.size.height, 320, self.frame.size.height);
+    self.frame = CGRectMake(0, -self.frame.size.height, 320, self.frame.size.height); 
     
-    //[self performSelector:@selector(remove) withObject:nil afterDelay:0.5];
+    [self performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:0.25];
 }
 
--(void) remove
-{
-    [self removeFromSuperview];
-}
 - (void)dealloc
 {
-    [_titleLabel release], _titleLabel = nil;
-    [_detailLabel release], _detailLabel = nil;
-    [_thumbImage release], _thumbImage = nil;
-    [_backgroundGradient release], _backgroundGradient = nil;
     [super dealloc];
 }
 

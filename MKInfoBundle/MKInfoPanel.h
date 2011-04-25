@@ -26,7 +26,7 @@ typedef enum MKInfoPanelType_
 
 @property (nonatomic, assign) IBOutlet UILabel *titleLabel;
 @property (nonatomic, assign) IBOutlet UILabel *detailLabel;
-@property (nonatomic, retain) IBOutlet UIImageView *thumbImage;
+@property (nonatomic, assign) IBOutlet UIImageView *thumbImage;
 @property (nonatomic, assign) IBOutlet UIImageView *backgroundGradient;
 
 +(void) showPanelInView:(UIView*) view type:(MKInfoPanelType) type title:(NSString*) title subtitle:(NSString*) subtitle hideAfter:(NSTimeInterval) interval;

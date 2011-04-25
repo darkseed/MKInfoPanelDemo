@@ -68,7 +68,7 @@
 -(IBAction) button3Tapped:(id) sender
 {
     [MKInfoPanel showPanelInView:self.view 
-                            type:MKInfoPanelTypeInfo 
+                            type:MKInfoPanelTypeError
                            title:@"Network Failure!" 
                         subtitle:nil 
                        hideAfter:2];
@@ -77,7 +77,7 @@
 -(IBAction) button4Tapped:(id) sender
 {
     [MKInfoPanel showPanelInView:self.view 
-                            type:MKInfoPanelTypeInfo 
+                            type:MKInfoPanelTypeError 
                            title:@"Network Failure!" 
                         subtitle:@"Check your internet connection and try again later!" 
                        hideAfter:2];
