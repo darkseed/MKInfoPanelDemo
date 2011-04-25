@@ -4,7 +4,6 @@
 //
 //  Created by Mugunth on 25/04/11.
 //  Copyright 2011 Steinlogic. All rights reserved.
-//
 
 #import "MKInfoPanelDemoViewController.h"
 #import "MKInfoPanel.h"
