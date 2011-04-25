@@ -12,4 +12,8 @@
     
 }
 
+-(IBAction) button1Tapped:(id) sender;
+-(IBAction) button2Tapped:(id) sender;
+-(IBAction) button3Tapped:(id) sender;
+-(IBAction) button4Tapped:(id) sender;
 @end
