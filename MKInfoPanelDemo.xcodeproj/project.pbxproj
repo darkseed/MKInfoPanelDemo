@@ -76,7 +76,7 @@
 		AB54DC941365ADD9004B54CF = {
 			isa = PBXGroup;
 			children = (
-				AB54DCE01365BA6A004B54CF /* MKInfoBundle */,
+				AB54DCE01365BA6A004B54CF /* MKInfoPanel */,
 				AB54DCA91365ADD9004B54CF /* MKInfoPanelDemo */,
 				AB54DCA21365ADD9004B54CF /* Frameworks */,
 				AB54DCA01365ADD9004B54CF /* Products */,
@@ -127,7 +127,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AB54DCE01365BA6A004B54CF /* MKInfoBundle */ = {
+		AB54DCE01365BA6A004B54CF /* MKInfoPanel */ = {
 			isa = PBXGroup;
 			children = (
 				AB54DCE31365BA6A004B54CF /* MKInfoPanel.h */,
@@ -142,6 +142,7 @@
 				AB54DCEA1365BA6A004B54CF /* Warning.png */,
 				AB54DCEB1365BA6A004B54CF /* Warning@2x.png */,
 			);
+			name = MKInfoPanel;
 			path = MKInfoBundle;
 			sourceTree = "<group>";
 		};
